@@ -51,7 +51,7 @@ func handleClient(client net.Conn, clientid int, msgs chan Message) {
 		}
 		msgs <- message
 		fmt.Println(msg)
-		fmt.Fprintln(client, "ok")
+	
 	}
 
 }
